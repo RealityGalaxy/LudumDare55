@@ -1,0 +1,156 @@
+[gd_scene load_steps=4 format=3 uid="uid://jtomlltth8ep"]
+
+[ext_resource type="PackedScene" uid="uid://cqgr0qp6108bf" path="res://Scenes/Cards/Norman/norman.tscn" id="2_4ebe4"]
+[ext_resource type="PackedScene" uid="uid://ypdyak5df252" path="res://Scenes/Cards/Anthropologist/anthropologist.tscn" id="2_i77sf"]
+[ext_resource type="PackedScene" uid="uid://cary6bfxcv6kp" path="res://Scenes/Level/tile_object.tscn" id="3_1a1yp"]
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="HBoxContainer" type="Control" parent="."]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -480.0
+offset_top = -260.0
+offset_right = 480.0
+grow_horizontal = 2
+grow_vertical = 0
+
+[node name="Norman" parent="HBoxContainer" instance=ExtResource("2_4ebe4")]
+layout_mode = 2
+anchors_preset = 0
+anchor_right = 0.0
+anchor_bottom = 0.0
+offset_right = 126.0
+offset_bottom = 192.0
+scale = Vector2(1.3, 1.3)
+
+[node name="Anthropologist" parent="HBoxContainer" instance=ExtResource("2_i77sf")]
+layout_mode = 1
+offset_left = 168.0
+offset_right = 218.16
+offset_bottom = 136.62
+
+[node name="Anthropologist2" parent="HBoxContainer" instance=ExtResource("2_i77sf")]
+layout_mode = 1
+offset_left = 336.0
+offset_right = 335.6
+
+[node name="TileObject7" parent="." instance=ExtResource("3_1a1yp")]
+custom_minimum_size = Vector2(64, 64)
+layout_mode = 2
+anchor_left = 0.22
+anchor_top = 0.187
+anchor_right = 0.305
+anchor_bottom = 0.345
+offset_left = 7.99997
+offset_top = 191.7
+offset_right = -33.0
+offset_bottom = 145.5
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="TileObject8" parent="." instance=ExtResource("3_1a1yp")]
+custom_minimum_size = Vector2(64, 64)
+layout_mode = 2
+offset_left = 544.0
+offset_top = 360.0
+offset_right = 639.0
+offset_bottom = 456.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="TileObject9" parent="." instance=ExtResource("3_1a1yp")]
+custom_minimum_size = Vector2(64, 64)
+layout_mode = 2
+offset_left = 728.0
+offset_top = 360.0
+offset_right = 823.0
+offset_bottom = 456.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="TileObject10" parent="." instance=ExtResource("3_1a1yp")]
+custom_minimum_size = Vector2(64, 64)
+layout_mode = 2
+offset_left = 912.0
+offset_top = 360.0
+offset_right = 1007.0
+offset_bottom = 456.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="TileObject11" parent="." instance=ExtResource("3_1a1yp")]
+custom_minimum_size = Vector2(64, 64)
+layout_mode = 2
+offset_left = 1096.0
+offset_top = 360.0
+offset_right = 1191.0
+offset_bottom = 456.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Control" type="Control" parent="."]
+anchors_preset = 0
+offset_left = 360.0
+offset_top = 168.0
+offset_right = 1239.0
+offset_bottom = 312.0
+
+[node name="TileObject2" parent="Control" instance=ExtResource("3_1a1yp")]
+custom_minimum_size = Vector2(64, 64)
+layout_mode = 2
+offset_right = 96.0
+offset_bottom = 96.0
+grow_horizontal = 2
+grow_vertical = 2
+enemy = true
+
+[node name="TileObject3" parent="Control" instance=ExtResource("3_1a1yp")]
+custom_minimum_size = Vector2(64, 64)
+layout_mode = 2
+offset_left = 184.0
+offset_right = 279.0
+offset_bottom = 96.0
+grow_horizontal = 2
+grow_vertical = 2
+enemy = true
+
+[node name="TileObject4" parent="Control" instance=ExtResource("3_1a1yp")]
+custom_minimum_size = Vector2(64, 64)
+layout_mode = 2
+offset_left = 368.0
+offset_right = 463.0
+offset_bottom = 96.0
+grow_horizontal = 2
+grow_vertical = 2
+enemy = true
+
+[node name="TileObject5" parent="Control" instance=ExtResource("3_1a1yp")]
+custom_minimum_size = Vector2(64, 64)
+layout_mode = 2
+offset_left = 552.0
+offset_right = 647.0
+offset_bottom = 96.0
+grow_horizontal = 2
+grow_vertical = 2
+enemy = true
+
+[node name="TileObject6" parent="Control" instance=ExtResource("3_1a1yp")]
+custom_minimum_size = Vector2(64, 64)
+layout_mode = 2
+offset_left = 736.0
+offset_right = 831.0
+offset_bottom = 96.0
+grow_horizontal = 2
+grow_vertical = 2
+enemy = true
